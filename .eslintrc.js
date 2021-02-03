@@ -115,6 +115,6 @@ module.exports = {
     'no-shadow': OFF,
     '@typescript-eslint/no-shadow': [ERROR],
     // 变量名不做限制
-    camelcase: [1, { properties: 'never' }],
+    camelcase: OFF,
   },
 }

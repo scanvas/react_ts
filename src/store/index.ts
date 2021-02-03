@@ -1,4 +1,3 @@
-import { format } from 'prettier'
 import { createStore } from 'redux'
 
 import reducer from './reducers'
