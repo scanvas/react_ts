@@ -10,3 +10,7 @@
 使用 Prettier 美化代码格式
 使用 Eslint 管理代码规范
 使用 lint-staged husky 对代码提交管理
+
+##### react
+
+支持 redux
