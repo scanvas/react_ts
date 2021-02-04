@@ -2,6 +2,7 @@ import React from 'react'
 import { shallowEqual, useSelector, useDispatch } from 'react-redux'
 import { IState } from './store/reduxTypes'
 import { Get_ADD_Action } from './store/actionCreators'
+import Father from './compoments/Father'
 import './App.scss'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <button type="button" onClick={changeNum}>
         click
       </button>
+      <Father name="锤子" />
     </div>
   )
 }
