@@ -1,5 +1,6 @@
 import React from 'react'
 import Child from '../Child'
+import Child2 from '../Child2'
 
 // 声明props
 interface IProps {
@@ -36,6 +37,7 @@ export default class Father extends React.Component<IProps, IState> {
         <div>name: {this.state.name}</div>
         <div>age: {this.state.age}</div>
         <Child name="苹果" age={20} addAge={this.state.addAge} />
+        <Child2 />
       </div>
     )
   }
