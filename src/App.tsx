@@ -1,9 +1,11 @@
 import React from 'react'
 import { shallowEqual, useSelector, useDispatch } from 'react-redux'
+import { Button } from 'antd'
 import { IState } from './store/reduxTypes'
 import { Get_ADD_Action } from './store/actionCreators'
 import Father from './compoments/Father'
 import './App.scss'
+import './App.less'
 
 function App() {
   const { name, num }: IState = useSelector(
@@ -25,6 +27,7 @@ function App() {
       <button type="button" onClick={changeNum}>
         click
       </button>
+      <Button type="primary">Button</Button>
       <Father name="锤子" />
     </div>
   )
