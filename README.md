@@ -1,27 +1,27 @@
-#### react-ts
+## react-ts
 
 ---
 
 这是一个使用 create-ract-app 搭建的 react+typescript 项目。
 
-##### 代码管理
+### 代码管理
 
 使用 editorconfig 对代码编写进行风格管理
 使用 Prettier 美化代码格式
 使用 Eslint 管理代码规范
 使用 lint-staged husky 对代码提交管理
 
-##### react
+### react
 
 支持 redux
 
-##### axios
+### axios
 
 支持返回值类型设置
 
-##### antd
+### antd
 
-###### 支持自定义主题色
+#### 支持自定义主题色
 
 因为此项目已经 run eject 过，所以没有参照 antd 官网配置自定义主题色。
 
@@ -31,9 +31,9 @@
 
 通过将版本等各种方案均没有解决。
 
-后面我仔细看了`webpack.config.js`生成`loaders`的逻辑，进行一下更改
+后面我仔细看了`webpack.config.js`生成`loaders`的逻辑，进行以下更改
 
-```
+```javascript
 // 修改getStyleLoaders
 const getStyleLoaders = (cssOptions, preProcessor) => {
     // ...
@@ -66,7 +66,7 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
     return loaders;
   };
 
-  // 配置loader部分，下载sass-loader上面即可
+  // 配置loader部分，写在sass-loader上面即可
 
   {
     test: lessRegex,
