@@ -22,10 +22,10 @@ export default class Child2 extends React.Component<IProps, IState> {
   search() {
     console.log(this)
     GET_TOP_LIST({ rid: '336355127' })
-      .then((res) => {
+      .then((res: any) => {
         console.log(res.data.programs)
       })
-      .catch((error) => {
+      .catch((error: any) => {
         console.log(error)
       })
   }

@@ -1,10 +1,8 @@
 import React from 'react'
 import { shallowEqual, useSelector, useDispatch } from 'react-redux'
-import { Button } from 'antd'
 import { IState } from './store/reduxTypes'
 import { Get_ADD_Action } from './store/actionCreators'
-import Father from './compoments/Father'
-import './App.scss'
+import AppRouter from './routes'
 import './App.less'
 
 function App() {
@@ -23,12 +21,13 @@ function App() {
 
   return (
     <div className="App">
-      hi {name} {num}
+      {/* hi {name} {num}
       <button type="button" onClick={changeNum}>
         click
       </button>
       <Button type="primary">Button</Button>
-      <Father name="锤子" />
+      <Father name="锤子" /> */}
+      <AppRouter />
     </div>
   )
 }
